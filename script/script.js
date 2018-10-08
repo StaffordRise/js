@@ -17,10 +17,12 @@ for (let i = 0; i < 2; i++) {
         b = prompt('Во сколько обойдется?', '');
 
     if ( (typeof(a))=== 'string' && (typeof(a)) != null && (typeof(b)) != null
-        && a != '' && и != '' && a.lenght < 50) {
+        && a != '' && b != '' && a.lenght < 50) {
         console.log("done")
         appData.expenses[a] = b;
 
+    } else {
+        i--;
     }
 };
 
