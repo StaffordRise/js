@@ -72,21 +72,23 @@ let appData = {
 
     chooseIncome: function() {
         let items = +prompt('Что принесет дополнительный доход? (Перечислите через запятую)', '');
-        appData.income = items.split(', ');
-        appData.income.push(prompt('Может что-то еще?'));
-        appData.income.sort();
+            appData.income = items.split(', ');
+            appData.income.push(prompt('Может что-то еще?'));
+            appData.income.sort();
+            
+        while(isNaN(items) || items =="" || items == null) {
+            items = +prompt('Ваш бюджет за месяц', '');
 
-        if ( (typeof(income)) === 'string' && (typeof(income)) != null && income != '' && a.lenght < 50) {
-        console.log("done")
-        appData.appData[income];
+        // if ( (typeof(income)) === 'string' && (typeof(income)) != null && income != '' && a.lenght < 50) {
+        // console.log("done")
+        // appData.appData[income];
     }
-    chooseIncome.forEach(function(item, i, income) {
-        let i = 1;
-        console.log(i + ': ' + item + " (Способы доп. заработка: " + income + ")");
+       appData.income.forEach(function(item, i, income) {
+              console.log(i + 1 + ': ' + item + " (Способы доп. заработка: " + item + ")");
     }),
-    
-    for (let key in appData) {
-        console.log("Наша программа включает в себя данные: ");
-    }
-}
 
+        for (var key in appData) {
+            console.log("Наша программа включает в себя данные: " + key);
+    };
+}
+}
