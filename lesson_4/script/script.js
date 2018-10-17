@@ -1,6 +1,25 @@
 'use strict';
 
-let money, time;
+let start = document.getElementById('start'),
+    yearsavings = document.getElementsByClassName('yearsavings-value'),
+    monthsavings = document.getElementsByClassName('monthsavings-value'),
+    income = document.getElementsByClassName('income-value'),
+    optionalexpenses = document.getElementsByClassName('optionalexpenses-value'),
+    expenses = document.getElementsByClassName('expenses-value'),
+    level = document.getElementsByClassName('level-value'),
+    daybudget = document.getElementsByClassName('daybudget-value'),
+    budget = document.getElementsByClassName('budget-value'),
+    input_expenses = document.getElementsByClassName('expenses-item'),
+    btn_1 = document.getElementsByTagName('button')[0],
+    btn_2 = document.getElementsByTagName('button')[1],
+    input = document.querySelectorAll('optionalexpenses-item'),
+    month = document.querySelector('month-value'),
+    year = document.querySelector('year-value'),
+    percent = document.querySelector('choose-percent'),
+    sum = document.querySelector('choose-sum'),
+    checkbox = document.querySelector('#savings'),
+    choose_income = document.querySelector('choose-income'),
+    money, time;
 
 function start() {
     money = +prompt('Ваш бюджет за месяц', '');

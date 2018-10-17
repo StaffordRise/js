@@ -42,8 +42,27 @@
 //    console.log(key);
 //}
 
-let ans = prompt('', ''),
-    arr = [];
+//let ans = prompt('', ''),
+//    arr = [];
 
-arr = ans.split(',');
+//arr = ans.split(',');
+//console.log(arr);
+
+//let arr = ['vfdb', 'sg', 'djnbj', 'bjdhnshi7'],
+//    i = arr.join(',  ');
+
+//    console.log(arr);
+
+// let arr = ['vfdb', 'sg', 'djnbj', 'bjdhnshi7'],
+//     i = arr.sort();
+
+// console.log(arr);
+
+let arr = [1,15,4],
+    i = arr.sort(compareNum);
+    
+function compareNum(a,b) {
+    return a-b;
+}
+
 console.log(arr);
