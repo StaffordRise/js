@@ -97,7 +97,7 @@ optionalExpensesBtn.addEventListener('click', function(){
 countBtn.addEventListener('click', function(){
     let expenses = 0;
 
-    expensesValue.textContent == '' ? expenses = 0 : expenses = +expensesValue.textContent;
+    expensesValue.textContent == '' ? expenses = 0 : expenses = +expensesValue.textContent; //6 урок задание 3
 
     if (appData.budget != undefined) {
         appData.moneyPerDay = ((appData.budget - +expensesValue.textContent) / 30).toFixed();
