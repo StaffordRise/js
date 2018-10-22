@@ -60,7 +60,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 'minutes' : minutes,
                 'seconds' : seconds
             }
-     }
+    }
             
     
 
