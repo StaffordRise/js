@@ -100,7 +100,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   close.addEventListener('click', () => {
       overlay.style.display = 'none';
-      more.classList.toggle('more-splash');
+      more.classList.remove('more-splash');
       document.body.style.overflow = '';
   });
 
@@ -114,7 +114,7 @@ window.addEventListener('DOMContentLoaded', () => {
     
     close.addEventListener('click', () => {
             overlay.style.display = 'none';
-            descrBtn.classList.toggle('more-splash');
+            descrBtn.classList.remove('more-splash');
             document.body.style.overflow = '';
         });
         
