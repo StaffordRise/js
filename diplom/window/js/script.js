@@ -18,9 +18,9 @@ close.addEventListener('click', function() {
     document.body.style.overflow = '';
 });
 
-let descrBtn = document.querySelector('.description-btn');
+let headerBtn = document.querySelector('.header_btn');
 
-descrBtn.addEventListener('click', function() {
+headerBtn.addEventListener('click', function() {
     overlay.style.display = 'block';
     this.classList.add('more-splash');
     document.body.style.overflow = 'hidden';
@@ -28,7 +28,7 @@ descrBtn.addEventListener('click', function() {
 
 close.addEventListener('click', function() {
         overlay.style.display = 'none';
-        descrBtn.classList.remove('more-splash');
+        headerBtn.classList.remove('more-splash');
         document.body.style.overflow = '';
     });
     
